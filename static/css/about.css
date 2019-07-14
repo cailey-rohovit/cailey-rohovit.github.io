@@ -1,0 +1,49 @@
+body {
+    display: flex;
+    overflow: hidden;
+}
+
+.container {
+    flex-direction: row;
+    justify-content: center;
+}
+
+.name-banner {
+    background: black;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex: 1 1 35%;
+}
+
+.name-banner__text {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 2.5rem;
+    letter-spacing: 4px;
+    font-weight: 500;
+    margin-top: 128px;
+    border: 3px solid white;
+    align-self: flex-start;
+}
+
+.name-banner__text > div {
+    padding: 8px 32px;
+}
+
+.name-banner__profile {
+    position: absolute;
+    max-width: 100%;
+    width: 380px;
+    height: auto;
+    right: 0;
+    top: 50%;
+    transform: translate(50%, -50%);
+}
+
+.about {
+    align-self: center;
+    max-width: 300px;
+    text-align: center;
+}

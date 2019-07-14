@@ -1,0 +1,48 @@
+body {
+    display: flex;
+}
+
+.container {
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contact-banner {
+    background: black;
+    display: flex;
+    justify-content: center;
+    flex: 1 1 40%;
+}
+
+.contact-banner__text {
+    color: white;
+    font-size: 2.5rem;
+    letter-spacing: 4px;
+    font-weight: 500;
+    padding: 24px 54px;
+    margin-top: 128px;
+    border: 3px solid white;
+    align-self: flex-start;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    min-width: 40vw;
+}
+
+.contact-item {
+    padding: 32px;
+    margin: 24px;
+    text-align: center;
+    min-width: 20vw;
+    background: #0E2F55;
+    color: white;
+    font-size: 1.4rem;
+}
+
+.contact-item > a {
+    text-decoration: none;
+    color: white;
+}
