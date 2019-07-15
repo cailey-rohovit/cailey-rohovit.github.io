@@ -34,12 +34,12 @@ body {
 .portfolio-image {
     max-width: 100%;
     max-height: 40vh;
-    height: auto;
+    height: 350px;
     margin: 12px 18px;
 }
 
-.portfolio-image--fake {
-    max-height: 40vh;
-    height: 32px;
-    width: 100%;
+@media (max-width: 1000px) {
+    .portfolio-banner {
+        display: none;
+    }
 }

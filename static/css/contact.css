@@ -1,17 +1,15 @@
-body {
-    display: flex;
-}
 
-.container {
-    flex-direction: row;
-    justify-content: center;
-}
 
 .contact-banner {
     background: black;
     display: flex;
     justify-content: center;
-    flex: 1 1 40%;
+    flex: 0 0 40%;
+}
+
+.main-container {
+    display: flex;
+    height: 100vh;
 }
 
 .contact-banner__text {
@@ -27,8 +25,16 @@ body {
 
 .contact-container {
     display: flex;
+    flex: 1 1 auto;
+    justify-content: center;
+}
+
+.contact-block {
+    display: flex;
     flex-direction: column;
     align-self: center;
+    justify-content: center;
+    align-items: center;
     min-width: 40vw;
 }
 
@@ -45,4 +51,13 @@ body {
 .contact-item > a {
     text-decoration: none;
     color: white;
+}
+
+@media (max-width: 1000px) {
+    .contact-banner {
+        display: none;
+    }
+    .contact-item {
+        font-size: 4rem;
+    }
 }

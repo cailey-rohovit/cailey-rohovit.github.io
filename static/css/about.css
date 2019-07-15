@@ -1,19 +1,14 @@
 body {
-    display: flex;
-    overflow: hidden;
 }
 
-.container {
-    flex-direction: row;
-    justify-content: center;
-}
 
 .name-banner {
     background: black;
     position: relative;
     display: flex;
+    height: 100vh;
     justify-content: center;
-    flex: 1 1 35%;
+    flex: 0 0 35%;
 }
 
 .name-banner__text {
@@ -44,6 +39,43 @@ body {
 
 .about {
     align-self: center;
-    max-width: 300px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 1.5rem;
+    flex: 1 1 auto;
+}
+
+.about__image {
+    display: none;
+    max-width: 500px;
+    margin: 32px;
+    height: auto;
+}
+
+.about__text  {
+    max-width: 400px;
     text-align: center;
+    font-size: 2rem;
+}
+
+.about-container {
+    display: flex;
+
+}
+
+@media (max-width: 1000px) {
+    .name-banner {
+        display: none;
+    }
+
+    .about-container {
+        justify-content: center;
+    }
+
+    .about__image {
+        display: block;
+    }
+
 }

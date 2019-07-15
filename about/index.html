@@ -6,13 +6,6 @@
     <link href="/static/css/about.css" rel="stylesheet">
 </head>
 <body>
-<div class="name-banner">
-    <div class="name-banner__text">
-        <div>Cailey</div>
-        <div style="text-align: right">Rohovit</div>
-    </div>
-    <img class="name-banner__profile" src="/static/images/profile.jpg" height="100" width="100">
-</div>
 <div class="container">
     <link href="/static/css/header.css" rel="stylesheet">
 <div class="header">
@@ -31,15 +24,58 @@
         <li class="nav_item"><a>Contact</a></li>
     </ul>
 </div>
+<div class="header--mobile">
+    <img src="/static/images/menu.png" id="menu-icon">
+    <div> About </div>
+</div>
 
-    <div class="about">
-        <h1 class="about__header">About</h1>
-        <p class="about__text">
-            Cailey Rohovit is currently living in Salt Lake City and is attending the
-            University of Utah as a Communication's student. She specializes in photo-realistic
-            water color, and multi-media pieces. If you would like to contact her about comissions,
-            refer to the <a href="/contact/">Contact Page</a>
-        </p>
+<div class="overlay">
+    <img src="/static/images/close.png" class="close">
+    <div class="overlay--banner">
+        Cailey Rohovit
+    </div>
+    <ul class="mobile-nav">
+        <li class="mobile_nav_item"><a href="/about/">About</a></li>
+        <li class="mobile_nav_item"><a href="/">Portfolio</a></li>
+        <li class="mobile_nav_item"><a href="/contact/">Contact</a></li>
+    </ul>
+</div>
+
+<script src="/static/js/jquery.js"></script>
+<script>
+    var sideNavToggle = false;
+
+    $(document).ready(function () {
+        $(".header--mobile").click(function () {
+            $(".overlay").css({display: "flex"})
+        });
+
+        $(".close").click(function () {
+           $(".overlay").hide();
+        });
+    });
+
+
+</script>
+
+    <div class="about-container">
+        <div class="name-banner">
+            <div class="name-banner__text">
+                <div>Cailey</div>
+                <div>Rohovit</div>
+            </div>
+            <img class="name-banner__profile" src="/static/images/profile.jpg" height="100" width="100">
+        </div>
+        <div class="about">
+            <img class="about__image" src="/static/images/profile.jpg">
+            <h1 class="about__header">About</h1>
+            <p class="about__text">
+                Cailey Rohovit is currently living in Salt Lake City and is attending the
+                University of Utah as a Communication's student. She specializes in photo-realistic
+                water color, and multi-media pieces. If you would like to contact her about comissions,
+                contact her <a href="mailto:caileyrohovitart@gmail.com">here</a>
+            </p>
+        </div>
     </div>
 </div>
 </body>

@@ -25,6 +25,39 @@
         <li class="nav_item"><a>Contact</a></li>
     </ul>
 </div>
+<div class="header--mobile">
+    <img src="/static/images/menu.png" id="menu-icon">
+    <div> Portfolio </div>
+</div>
+
+<div class="overlay">
+    <img src="/static/images/close.png" class="close">
+    <div class="overlay--banner">
+        Cailey Rohovit
+    </div>
+    <ul class="mobile-nav">
+        <li class="mobile_nav_item"><a href="/about/">About</a></li>
+        <li class="mobile_nav_item"><a href="/">Portfolio</a></li>
+        <li class="mobile_nav_item"><a href="/contact/">Contact</a></li>
+    </ul>
+</div>
+
+<script src="/static/js/jquery.js"></script>
+<script>
+    var sideNavToggle = false;
+
+    $(document).ready(function () {
+        $(".header--mobile").click(function () {
+            $(".overlay").css({display: "flex"})
+        });
+
+        $(".close").click(function () {
+           $(".overlay").hide();
+        });
+    });
+
+
+</script>
 
     <div class="portfolio-banner">
         <span class="portfolio-banner__text">Portfolio</span>
@@ -33,19 +66,19 @@
         
         <img src=/static/images/portfolio/portfolio-1.jpg class="portfolio-image">
         
-        <img src=/static/images/portfolio/portfolio-1.jpg class="portfolio-image">
+        <img src=/static/images/portfolio/dog.jpg class="portfolio-image">
         
-        <img src=/static/images/portfolio/portfolio-1.jpg class="portfolio-image">
+        <img src=/static/images/portfolio/waves.jpg class="portfolio-image">
         
-        <img src=/static/images/portfolio/portfolio-1.jpg class="portfolio-image">
+        <img src=/static/images/portfolio/ryan.jpg class="portfolio-image">
         
-        <img src=/static/images/portfolio/portfolio-1.jpg class="portfolio-image">
+        <img src=/static/images/portfolio/ice.jpg class="portfolio-image">
         
-        <img src=/static/images/portfolio/portfolio-1.jpg class="portfolio-image">
+        <img src=/static/images/portfolio/stitching.jpg class="portfolio-image">
         
-        <img src=/static/images/portfolio/portfolio-1.jpg class="portfolio-image">
+        <img src=/static/images/portfolio/peace.jpg class="portfolio-image">
         
-        <img src=/static/images/portfolio/portfolio-1.jpg class="portfolio-image">
+        <img src=/static/images/portfolio/hex.jpg class="portfolio-image">
         
     </div>
 </div>
