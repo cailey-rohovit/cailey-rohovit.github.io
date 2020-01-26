@@ -43,21 +43,20 @@ body {
     justify-content: center;
     align-items: center;
     display: flex;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     flex: 1 1 auto;
 }
 
 .about__image {
-    display: none;
     max-width: 500px;
+    height: 400px;
     margin: 32px;
-    height: auto;
 }
 
 .about__text  {
-    max-width: 400px;
+    margin: 16px;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.3rem;
 }
 
 .about-container {

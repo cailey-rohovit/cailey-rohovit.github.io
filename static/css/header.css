@@ -43,8 +43,10 @@ body {
 }
 
 .nav_item {
-    padding: 32px;
-    font-size: 1.2rem;
+    padding: 4px 8px;
+    margin: 16px;
+    font-size: 2rem;
+    border: 2px solid black;
 }
 
 .nav_item > a {
@@ -53,7 +55,7 @@ body {
 }
 
 .header--mobile {
-    z-index: 222;
+    z-index: 2;
     display: none;
     background: black;
     padding: 32px;
@@ -106,9 +108,10 @@ body {
 .mobile_nav_item {
     color: white;
     list-style-type: none;
-    margin: auto;
+    margin: 16px auto;
     text-align: center;
     padding: 16px;
+    border: 2px solid white;
 }
 
 .close {

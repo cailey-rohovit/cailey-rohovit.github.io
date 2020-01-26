@@ -7,6 +7,13 @@
     <link href="/static/css/home.css" rel="stylesheet">
 </head>
 <body>
+<div class="modal">
+    
+    <span class="close">&times;</span>
+
+    
+    <img class="modal-content" id="img">
+</div>
 <div class="container">
     <link href="/static/css/header.css" rel="stylesheet">
 <div class="header">
@@ -55,32 +62,128 @@
            $(".overlay").hide();
         });
     });
-
-
 </script>
 
     <div class="portfolio-banner">
         <span class="portfolio-banner__text">Portfolio</span>
     </div>
+    <div class="category-nav">
+        
+        <a href="#watercolor" class="category-link">Watercolor</a>
+        
+        <a href="#mixed-media" class="category-link">Mixed Media</a>
+        
+        <a href="#pen-and-ink" class="category-link">Pen and Ink</a>
+        
+    </div>
     <div class="portfolio-container">
         
-        <img src=/static/images/portfolio/portfolio-1.jpg class="portfolio-image">
+        <div class="category" id=watercolor>
+            <div class="category__banner">
+                <h1 class="category__name">Watercolor</h1>
+            </div>
+            <div class="category__paintings">
+                
+                    
+                        <img src=/static/images/portfolio/portfolio-1.jpg class="portfolio-image">
+                    
+                
+                    
+                
+                    
+                
+                    
+                        <img src=/static/images/portfolio/ryan.jpg class="portfolio-image">
+                    
+                
+                    
+                        <img src=/static/images/portfolio/ice.jpg class="portfolio-image">
+                    
+                
+                    
+                
+                    
+                        <img src=/static/images/portfolio/peace.jpg class="portfolio-image">
+                    
+                
+                    
+                
+            </div>
+        </div>
         
-        <img src=/static/images/portfolio/dog.jpg class="portfolio-image">
+        <div class="category" id=mixed-media>
+            <div class="category__banner">
+                <h1 class="category__name">Mixed Media</h1>
+            </div>
+            <div class="category__paintings">
+                
+                    
+                
+                    
+                        <img src=/static/images/portfolio/dog.jpg class="portfolio-image">
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        <img src=/static/images/portfolio/stitching.jpg class="portfolio-image">
+                    
+                
+                    
+                
+                    
+                        <img src=/static/images/portfolio/hex.jpg class="portfolio-image">
+                    
+                
+            </div>
+        </div>
         
-        <img src=/static/images/portfolio/waves.jpg class="portfolio-image">
-        
-        <img src=/static/images/portfolio/ryan.jpg class="portfolio-image">
-        
-        <img src=/static/images/portfolio/ice.jpg class="portfolio-image">
-        
-        <img src=/static/images/portfolio/stitching.jpg class="portfolio-image">
-        
-        <img src=/static/images/portfolio/peace.jpg class="portfolio-image">
-        
-        <img src=/static/images/portfolio/hex.jpg class="portfolio-image">
+        <div class="category" id=pen-and-ink>
+            <div class="category__banner">
+                <h1 class="category__name">Pen and Ink</h1>
+            </div>
+            <div class="category__paintings">
+                
+                    
+                
+                    
+                
+                    
+                        <img src=/static/images/portfolio/waves.jpg class="portfolio-image">
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </div>
+        </div>
         
     </div>
 </div>
+<script>
+    const modal = $('.modal');
+    const img = document.getElementById('img');
+
+    $('.close').click(function (e) {
+        modal.hide();
+    });
+
+    $('.portfolio-image').click(function (e) {
+        modal.show();
+        console.log(e.target.src);
+        img.src = e.target.src;
+    });
+</script>
 </body>
 </html>
